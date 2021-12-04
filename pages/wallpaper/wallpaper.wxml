@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{isShowType}}" class="listShow" bindtap="showList" >
+    <text>分类</text>
+    <image src="../../images/showList.png"></image>
+  </view>
+  <view class="showList"  animation="{{animation}}">
+    <view class="hideList" bindtap="hideList" wx:if="{{!isShowType}}">
+      <text>收起</text>
+      <image src="../../images/hideList.png"></image>
+    </view>
+    <view class="navBar">
+      <text>壁纸分类</text>
+    </view>
+    <scroll-view class="typeItems" scroll-y="true">
+      <view class="itemT" wx:for="{{typeList}}" hover-class="itemClick" bindtap="changeType" data-imgType="{{item}}">
+        {{item}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class="mainContent">
+  <!-- 这里展示种类 -->
+  <block wx:for="{{imgList}}">
+    <image class="detail" src='https://linjingfly.top/static/img/fake/{{item}}' bindtap="detail" data-imgSrc='{{item}}' mode="widthFix"></image>
+  </block>
+  </view>
+  <view class="bottom"> 
+    <view class="threeItem gray" >
+      <image class="gray" src="../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toTools">
+      <image src="../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../images/person.png"></image>
+    </view>
+  </view>
+</view>

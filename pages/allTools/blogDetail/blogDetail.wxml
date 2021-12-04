@@ -1,0 +1,43 @@
+<!--pages/blogDetail/blogDetail.wxml-->
+<!--pages/blogIndex/blogIndex.wxml-->
+<!--index.wxml-->
+<view class="container">
+<!-- 有内容时 -->
+  <view wx:if="{{blog.code > 0}}" class="mainContent">
+    <view class="title">{{blog.title}}</view>
+    <scroll-view scroll-y="true" scroll-x="true" class="mainText">
+      <rich-text nodes="{{blog.content}}">
+      </rich-text>
+
+    </scroll-view>
+
+  </view>
+<!-- 无内容可现显示 -->
+  <view wx:else class="mainContent">
+    <view class="title">{{blog.title}}</view> 
+     <button bindtap="goToBlog" >回到博客主页</button>
+  </view>
+  <view class="mes">   
+      <view class="right-Pannel"> 
+        <text >作者:{{blog.author}}</text>
+      </view>
+      <view class="right-Pannel">
+        <text >分类:{{blog.type}}</text>
+      </view>
+      <view class="right-Pannel">
+        <text >{{blog.createTime}}</text>
+      </view>
+    </view>
+</view>
+<view class="bottom"> 
+    <view class="threeItem "  bindtap="toWallpaper">
+      <image src="../../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toTools">
+      <image src="../../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../../images/person.png"></image>
+    </view>
+  </view>
+

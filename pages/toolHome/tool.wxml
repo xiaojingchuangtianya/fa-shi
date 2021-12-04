@@ -1,0 +1,32 @@
+<!--pages/toolPage/tool.wxml-->
+<view class="container">
+  <view class="padShow">
+    <image src="../../images/padShow.png">
+    </image>
+  </view>
+  <view class="onUse">
+    <view class="bar">
+      <text>可使用功能</text>
+    </view>
+    <view class="eachFun">
+      <view wx:for="{{toolFuns}}" class="tool" bindtap="goPage" data-page="{{item.goPage}}">
+      <image src="{{item.toolImg}}" class="toolImg" mode="heightFix"></image>
+      <text class="toolText">{{item.toolName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="onDev">
+    
+  </view>
+  <view class="bottom"> 
+    <view class="threeItem "  bindtap="toWallpaper">
+      <image src="../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem gray">
+      <image src="../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../images/person.png"></image>
+    </view>
+  </view>
+</view>

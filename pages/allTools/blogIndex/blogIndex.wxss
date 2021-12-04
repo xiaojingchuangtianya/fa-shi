@@ -1,0 +1,69 @@
+/* pages/blogIndex/blogIndex.wxss */
+page,.container{
+  width: 100%;
+  height: 100%;
+}
+
+.icon text{
+  display: block;
+}
+.icon image{
+  width: 30%;
+  height: 40%;
+}
+.onlook{
+  background: darkgray !important;
+}
+.showPannel , .hotPannel{
+  width: 100%;
+  height: 40%;
+  font-size: small;
+}
+.upPannel{
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  font-weight: bolder;
+  background-color: cadetblue;
+}
+navigator{
+  background-color: rgb(155, 168, 163);
+  border-bottom: 1px solid white;
+}
+button {
+  width: inherit;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 10px;
+  width: 86%;
+  height: 6%;
+  left: 7%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: stretch;
+}
+.threeItem{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  margin:  0 auto;
+}
+.threeItem image{
+  height: 80%;
+  width: 40%;
+}
+.gray{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}

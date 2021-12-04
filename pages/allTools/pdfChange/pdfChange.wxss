@@ -1,0 +1,71 @@
+/* pages/allTools/pdfChange/pdfChange.wxss */
+page,.container{
+  width: 100%;
+  height: 100%;
+}
+.uploadFile{
+  height: 50%;
+  width: 100%;
+}
+.uploadFile .uploadImage{
+  width: 100%;
+  text-align: center;
+}
+.strong{
+  font-weight: bold;
+  font-size: large;
+}
+.uploadFile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.uploadFile image{
+  width: 200px;
+  height: 200px;
+}
+.uploadFile .upload{
+  background-color: rgb(54, 118, 238);
+  border-radius: 10px;
+  border: rgb(107, 131, 240) solid 2px;
+}
+.uploadFile .download{
+  background-color: rgb(54, 238, 125);
+  border-radius: 10px;
+  border: rgb(118, 241, 215) solid 2px;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 10px;
+  width: 86%;
+  height: 6%;
+  left: 7%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: stretch;
+}
+.threeItem{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  margin:  0 auto;
+}
+.threeItem image{
+  height: 80%;
+  width: 40%;
+}
+.gray{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}

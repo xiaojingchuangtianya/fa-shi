@@ -1,0 +1,36 @@
+<!--pages/blogIndex/blogIndex.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <view class="upPannel">
+    <text>最新信息</text>
+  </view>
+  <scroll-view class="showPannel" scroll-y="true">
+    <view wx:for="{{tenHots}}">
+      <navigator  url="../blogDetail/blogDetail?id={{item[1]}}" hover-class="navigator-hover">
+        {{item[0]}}
+      </navigator>
+    </view>
+  </scroll-view>
+  <view class="upPannel">
+    <text>最近热门</text>
+  </view>
+  <scroll-view class="hotPannel" scroll-y="true">
+    <view wx:for="{{tenBlogs}}">
+      <navigator  url="../blogDetail/blogDetail?id={{item[1]}}" hover-class="navigator-hover">
+        {{item[0]}}
+      </navigator>
+    </view>
+  </scroll-view>
+  <view class="bottom"> 
+    <view class="threeItem "  bindtap="toWallpaper">
+      <image src="../../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem"  bindtap="toTools">
+      <image src="../../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../../images/person.png"></image>
+    </view>
+  </view>
+</view>
+

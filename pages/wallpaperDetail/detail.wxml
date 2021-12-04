@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="mainContent">
+  <!-- {{imgurl}} -->
+  <scroll-view class="img" scroll-x="true">
+    <image src='{{imgurl}}' mode="heightFix"></image>
+  </scroll-view>
+    <view class="clickDown">
+      <!-- <image class="heart" src="../../images/heart.png" mode="heightFix"></image> -->
+      <button bindtap="saveImg" id="saveImg">保存至本地</button>
+    </view>
+  </view>
+  <view class="bottom"> 
+    <view class="threeItem gray" >
+      <image class="gray" src="../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toTools">
+      <image src="../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../images/person.png"></image>
+    </view>
+  </view>
+</view>

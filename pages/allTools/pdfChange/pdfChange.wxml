@@ -1,0 +1,36 @@
+<!--pages/allTools/pdfChange/pdfChange.wxml-->
+<view class="container">
+  <view class="uploadFile">
+      <view class="uploadImage"><image id="getImg" src="{{imageSrc}}"></image></view>
+      <button bindtap="choseFile" wx:if="{{isChange}}" class="upload">选择文件</button>
+      <button bindtap="downLoadFile" wx:else="{{isChange}}" class="download">下载文件</button>
+  </view>
+  <view class="notice">
+    <view>
+      <text>1.文件不会被记录，上传转换后会</text><text class="strong">自动销毁.</text>
+    </view>
+    <view>
+      <text>2.你可以上传word，excel，ppt，csv以及txt文件，会自动将你的文件转换为PDF文件.</text>
+    </view>
+    <view>
+      <text>3.因服务器性能不足，目前文件最大支持</text><text class="strong">20m</text><text>，如果超出该范围可能暂时目前无法使用该功能.</text>
+    </view>
+    <view>
+      <text>4.因小程序限制,无法直接将文件保存至用户手机文件夹,需要用户自主将文件转发到文件助手进行保存!</text>
+    </view>
+  </view>
+
+
+
+  <view class="bottom"> 
+    <view class="threeItem "  bindtap="toWallpaper">
+      <image src="../../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem gray">
+      <image src="../../../images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="../../../images/person.png"></image>
+    </view>
+  </view>
+</view>

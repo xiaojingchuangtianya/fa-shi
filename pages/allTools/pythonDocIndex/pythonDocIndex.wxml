@@ -1,0 +1,34 @@
+<view class="container" bindtouchstart="touchstart" bindtouchend="touchend">
+  <view class="head"> 
+    <view class="search">
+      搜索
+    </view>
+  </view>
+
+  <!-- 滑动条的位置 -->
+  <view class="oneSlide">
+  <!-- 滑动块 -->
+    <view class="Block {{ slideStyle }}">
+    {{slideText[nowPage-1]}}
+    </view>
+  </view>
+  <view class="mainContent ">
+    <view id="one" class=" showContent one {{pageOneindex}}">
+      <view class="box">
+      </view>
+      <view class="box">
+      </view>
+      <view class="box">
+      </view>
+    </view>
+    <view id="two" class="showContent two {{pageTwoindex}}">
+      <view class="box">
+      </view>
+    </view>
+    <view id="three" class="showContent three {{pageThreeindex}}">
+      <view class="box">
+      </view>
+    </view>
+  </view>
+
+</view>

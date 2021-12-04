@@ -1,0 +1,56 @@
+<!--pages/myMes/myMes.wxml-->
+<!--index.wxml-->
+<view class="Ncontainer">
+  <view class="mainContent">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+     <view class="image"><image class="headImg" src="{{userInfo.avatarUrl}}"  style="width: {{headWidth}}px;"></image></view>
+      <view><text class="nickName">{{userInfo.nickName}}</text></view>
+    </block>
+  </view>
+  <view class="listTap">
+    <view class="guide tapPan">
+    <button class="line" style="width: 100%;" bindtap="showDoing">
+      <image src="../../images/doing.png" class="icon"></image>
+      <view class="text">操作指引</view>
+      <image src="../../images/arrow.png" class="arrow"></image>
+    </button>
+    </view>
+    <view class="about tapPan">
+      <button class="line" style="width: 100%;" bindtap="showAuthor">
+        <image src="../../images/about.png" class="icon"></image>
+        <view class="text">关于作者</view>
+        <image src="../../images/arrow.png" class="arrow"></image>
+      </button>
+    </view>
+    <view class="advice tapPan">
+      <button class="line" style="width: 100%;" bindtap="showBad">
+        <image src="../../images/means.png" class="icon"></image>
+        <view class="text">意见反馈</view>
+        <image src="../../images/arrow.png" class="arrow"></image>
+      </button>
+    </view>
+  </view>
+  <view class="bottom"> 
+    <view class="threeItem " bindtap="ToWallpaper">
+      <image  src="../../images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toTools">
+      <image src="../../images/tools.png"></image>
+    </view>
+    <view class="threeItem gray">
+      <image src="../../images/person.png"></image>
+    </view>
+  </view>
+</view>
+
