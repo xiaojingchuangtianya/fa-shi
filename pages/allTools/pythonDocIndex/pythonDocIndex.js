@@ -12,6 +12,7 @@ Page({
     nowPage:2,//判别页面处于的位置，在1，3页面需要考虑翻动到下一个页面的情况
     startX:0,//滑动时屏幕的初始x坐标
     slideText:["builtIn","热门","最近查看"],
+    placeHolder:"输入搜索关键字"
   },
 
   /**
@@ -32,7 +33,7 @@ Page({
   },
   touchend(e){
     // console.log("末尾",e.changedTouches[0].clientX)
-    if(this.data.startX-e.changedTouches[0].clientX > 20){//滑动向右
+    if(this.data.startX-e.changedTouches[0].clientX > 50){//滑动向右
       let nowPage=this.data.nowPage;
       if (nowPage==1){
         this.setData({
@@ -62,7 +63,7 @@ Page({
         })
       }
     }
-    if( this.data.startX - e.changedTouches[0].clientX < -20){//滑动向左
+    if( this.data.startX - e.changedTouches[0].clientX < -50){//滑动向左
       let nowPage=this.data.nowPage;
       if (nowPage==1){
         this.setData({
@@ -92,6 +93,17 @@ Page({
         })
       }
     }
+  },
+
+  inputFocus(){
+    this.setData({
+      placeHolder:""
+    })
+  },
+  inputBlur(){
+    this.setData({
+      placeHolder:"输入搜索关键字"
+    })
   }
 
 })

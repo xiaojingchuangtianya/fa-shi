@@ -1,7 +1,12 @@
 <view class="container" bindtouchstart="touchstart" bindtouchend="touchend">
   <view class="head"> 
+  <image src="/images/backgroud.jpg" mode="aspectFill">
+  </image>
     <view class="search">
-      搜索
+      <view class="glass">
+        <input type="text" placeholder="{{placeHolder}}" placeholder-class="placeholder"  bindfocus="inputFocus" bindblur="inputBlur"></input>
+        <image src="/images/search.png"></image>
+      </view>
     </view>
   </view>
 
@@ -13,22 +18,75 @@
     </view>
   </view>
   <view class="mainContent ">
-    <view id="one" class=" showContent one {{pageOneindex}}">
+    <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true">
       <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
       </view>
       <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
       </view>
       <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
       </view>
-    </view>
-    <view id="two" class="showContent two {{pageTwoindex}}">
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view><view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+      <view class="box">
+      <image src="/images/Python.png">
+      </image>
+      FileWrite
+      </view>
+    </scroll-view>
+    <scrool-view  class="showContent two {{pageTwoindex}}">
       <view class="box">
       </view>
-    </view>
-    <view id="three" class="showContent three {{pageThreeindex}}">
+    </scrool-view>
+    <scrool-view  class="showContent three {{pageThreeindex}}">
       <view class="box">
       </view>
-    </view>
+    </scrool-view>
   </view>
 
 </view>
