@@ -12,7 +12,7 @@ page,.container{
 }
 .head .search{
   position: fixed;
-  height: 250px;
+  height: 220px;
   width: 100%;
   top: 0;
 }
@@ -51,14 +51,14 @@ page,.container{
 }
 .head{
   width: 100%;
-  height: 250px;
+  height: 220px;
   text-align: center;
 }
 
 .oneSlide{
   width: 100%;
   height: 30px;
-  background-color: #aeb5d8ab;
+  background-color: rgba(180,180,180,0.5);
 }
 .Block{
   width: 40%;
@@ -89,7 +89,7 @@ page,.container{
   animation: LslideOne 0.5s linear forwards;
 }
 .mainContent{
-  height: calc(70% - 30px);
+  height: calc(100% - 250px);
   width: 100%;
 }
 .mainContent , .showContent{
@@ -103,20 +103,20 @@ page,.container{
 .mainContent  .one{
   position: absolute;
   left: 0;
-  height: calc(70% - 30px);
+  height: calc(100% - 250px);
   background-color: #cad8cd;
 }
 .mainContent  .two{
   z-index: 3;
   position: absolute;
   left: 0;
-  height: calc(70% - 30px);
+  height:calc(100% - 250px);
   background-color:#e4e1d6;
 }
 .mainContent  .three{
   position: absolute;
   right: 0;
-  height: calc(70% - 30px);
+  height: calc(100% - 280px);
   background-color: #cad7d8;
 }
 /* 决定那个展示在最高层级 */

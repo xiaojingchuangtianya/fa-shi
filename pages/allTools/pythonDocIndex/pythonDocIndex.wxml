@@ -18,72 +18,19 @@
     </view>
   </view>
   <view class="mainContent ">
-    <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true">
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
+    <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
+      <view class="box" wx:for="{{builtIn}}" >
+        <image src="{{item.img}}">
+        </image>
+        {{item.name}}
       </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view><view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
-      <view class="box">
-      <image src="/images/Python.png">
-      </image>
-      FileWrite
-      </view>
+
     </scroll-view>
-    <scrool-view  class="showContent two {{pageTwoindex}}">
+    <scrool-view  class="showContent two {{pageTwoindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
       <view class="box">
       </view>
     </scrool-view>
-    <scrool-view  class="showContent three {{pageThreeindex}}">
+    <scrool-view  class="showContent three {{pageThreeindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
       <view class="box">
       </view>
     </scrool-view>

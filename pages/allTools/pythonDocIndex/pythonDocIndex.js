@@ -12,7 +12,24 @@ Page({
     nowPage:2,//判别页面处于的位置，在1，3页面需要考虑翻动到下一个页面的情况
     startX:0,//滑动时屏幕的初始x坐标
     slideText:["builtIn","热门","最近查看"],
-    placeHolder:"输入搜索关键字"
+    placeHolder:"输入搜索关键字",
+    couldGet:1,
+    builtIn:[{"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"},
+              {"img":"/images/Python.png","name":"fileWrite"}],//存放builtIn
   },
 
   /**
@@ -104,6 +121,23 @@ Page({
     this.setData({
       placeHolder:"输入搜索关键字"
     })
+  },
+  addMore(e){
+    if(this.data.couldGet==0){
+      console.log("不可以获取")
+      
+    }
+    else{
+      console.log("暂时允许")
+      console.log(e)
+      this.setData({
+        couldGet:0,
+        builtIn:this.data.builtIn.concat([{"img":"/images/Python.png","name":"fileWrite"},{"img":"/images/Python.png","name":"fileWrite"}])
+      }) 
+      var that =this;
+      setTimeout(function(){that.data.couldGet=1;},2000)
+    }
+   
   }
 
 })
