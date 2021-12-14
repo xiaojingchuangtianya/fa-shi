@@ -1,0 +1,18 @@
+<!--pages/allTools/docDetail/docDetail.wxml-->
+<view class="container">
+  <view class="head">
+    <!-- 展示的名字 -->
+    <view class="showName">
+    </view>
+    <!-- 展示的注释 -->
+    <view class="showDec">
+    </view>
+  </view>
+  <scroll-view class="introduce"  scroll-y="true">
+    <view class="introText">
+      <text class="bold">说明:</text> {{introText}}
+    </view>
+  </scroll-view>
+  <scroll-view class="mainContent" scroll-y="true">
+  </scroll-view>
+</view>

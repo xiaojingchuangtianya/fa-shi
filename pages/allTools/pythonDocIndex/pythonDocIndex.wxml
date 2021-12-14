@@ -18,22 +18,38 @@
     </view>
   </view>
   <view class="mainContent ">
-    <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
-      <view class="box" wx:for="{{builtIn}}" >
+    <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="showTouch">
+      <view class="box" wx:for="{{packages}}" >
         <image src="{{item.img}}">
         </image>
         {{item.name}}
       </view>
 
     </scroll-view>
-    <scrool-view  class="showContent two {{pageTwoindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
-      <view class="box">
+    <scroll-view  class=" showContent two {{pageTwoindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
+      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}">
+        <image src="{{item.img}}">
+        </image>
+        {{item.name}}
       </view>
-    </scrool-view>
-    <scrool-view  class="showContent three {{pageThreeindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
-      <view class="box">
+    </scroll-view>
+    <scroll-view  class=" showContent three {{pageThreeindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
+      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}">
+        <image src="{{item.img}}">
+        </image>
+        {{item.name}}
       </view>
-    </scrool-view>
+    </scroll-view>
   </view>
-
+  <view class="bottom"> 
+    <view class="threeItem "  bindtap="toWallpaper">
+      <image src="/images/wallpaper.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toTools">
+      <image src="/images/tools.png"></image>
+    </view>
+    <view class="threeItem" bindtap="toMes">
+      <image src="/images/person.png"></image>
+    </view>
+  </view>
 </view>

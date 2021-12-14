@@ -8,8 +8,8 @@
     "pages/wallpaperDetail/detail",
     "pages/allTools/blogIndex/blogIndex",
     "pages/allTools/blogDetail/blogDetail",
-    "pages/allTools/pdfChange/pdfChange"
-
+    "pages/allTools/pdfChange/pdfChange",
+    "pages/allTools/docDetail/docDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

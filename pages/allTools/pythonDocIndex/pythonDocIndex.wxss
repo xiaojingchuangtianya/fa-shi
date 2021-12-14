@@ -103,14 +103,13 @@ page,.container{
 .mainContent  .one{
   position: absolute;
   left: 0;
-  height: calc(100% - 250px);
-  background-color: #cad8cd;
+  height: calc(100% - 280px);
+  background-color: #bdcfd8;
 }
 .mainContent  .two{
-  z-index: 3;
   position: absolute;
   left: 0;
-  height:calc(100% - 250px);
+  height: calc(100% - 280px);
   background-color:#e4e1d6;
 }
 .mainContent  .three{
@@ -121,10 +120,10 @@ page,.container{
 }
 /* 决定那个展示在最高层级 */
 .mainContent .show{
-  z-index:3;
+  display: flex;
 }
 .mainContent .hide{
-  z-index: 0;
+  display: none;
 }
 .mainContent .showContent .box{
   margin: 10px 5px;
@@ -137,7 +136,45 @@ page,.container{
 .mainContent .showContent .box image{
   width: 40px;
   height: 40px;
+  margin: 0 30px;
 }
+
+
+.bottom{
+  position: fixed;
+  bottom: 10px;
+  width: 86%;
+  height: 6%;
+  left: 7%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: stretch;
+}
+.threeItem{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  margin:  0 auto;
+}
+.threeItem image{
+  height: 80%;
+  width: 40%;
+}
+.gray{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+
 
 
 @keyframes RslideOne{
