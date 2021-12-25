@@ -1,5 +1,6 @@
 // pages/blogDetail/blogDetail.js
 var util = require('../../../utils/util.js')
+const app = getApp();
 Page({
   data: {
     blog:{},
@@ -20,12 +21,13 @@ Page({
         else{
           var dateBefore=new Date(res.data.createTime)
           var nowDate=new Date();
+          let result=app.towxml(res.data.content,"html",{})
           that.setData({
             blog:{
             "code":1,
             "title":res.data.title,
             "type":res.data.type,
-            "content":res.data.content,
+            "content":result,
             "createTime":dateBefore.getFullYear()==nowDate.getFullYear()?util.YearTime(dateBefore):util.OtherYear(dateBefore),
             "author":res.data.author}
           })

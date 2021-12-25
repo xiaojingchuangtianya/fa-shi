@@ -1,5 +1,8 @@
 /* pages/blogDetail/blogDetail.wxss */
 /* pages/blogIndex/blogIndex.wxss */
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/dark.wxss';
+@import '/towxml/style/theme/light.wxss';
 
 page,.container{
   width: 100%;

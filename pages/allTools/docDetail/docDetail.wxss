@@ -4,16 +4,18 @@ page,.container{
   height: 100%;
 }
 .head{
-  height: 25px;
+  height: 50px;
 }
 .head .showName{
   height: 25px;
-  background-color: rgb(168, 237, 247);
-  font-weight: bold;
-  text-align: center;
+  background-color: lightgray;
+  display: flex;
 }
-
-
+.head .showDec{
+  height: 25px;
+  background-color: rgb(233, 172, 80);
+  display: flex;
+}
 .introduce{
   height: 200px;
   width: 100%;
@@ -24,52 +26,27 @@ page,.container{
   font-size: large;
   font-weight: bold;
 }
-.mainContent{
-  width: 100%;
-  height: calc(100% - 225px);
-  background-color: #5db1b9;
-}
 
-.mainContent .showText{
-  /* font-size: large; */
-  font-weight: bold;
-}
-.firstIn{
-  /* 一级缩进 */
-  margin-left: 10px;
-}
-.secondIn{
-  /* 二级缩进 */
-  margin-left: 20px;
-}
-.thirdIn{
-  margin-left: 26px;
-}
-.imageUp{
-  transform: rotate(180deg);
-  margin-right: 18px;
-}
-.mainContent .moreMsg{
-  background-color: lightgray;
-  font-size: 0.6em;
-  border-bottom: solid 1px #9fe962;
-}
-.moreMsg .showMoreIcon{
-  height: 1.3em;
-  width: 1.3em;
-  margin-top:1px;
-  right: 18px;
-  position: absolute;
-}
-.hideStyle{
-  display: none;
-}
+/* 滑动条样式修改 */
 
-
-
-
-#dec::-webkit-scrollbar{
-  width:0;
-  height:0;
-  color:transparent;
+::-webkit-scrollbar
+{
+width: 8px;
+background-color: #ffffff;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+background-color:rgb(113,142,148);
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+/* -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); */
+background-color:rgb(81, 132, 143);
 }

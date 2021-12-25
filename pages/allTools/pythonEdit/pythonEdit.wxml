@@ -1,0 +1,4 @@
+<import src="/towxml/towxml.wxml"/>
+<view class="container">
+  <towxml nodes="{{article}}"/>
+</view>

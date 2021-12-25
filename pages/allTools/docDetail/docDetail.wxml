@@ -3,7 +3,9 @@
   <view class="head">
     <!-- 展示的名字 -->
     <view class="showName">
-    MODULE:{{moduleName}}
+    </view>
+    <!-- 展示的注释 -->
+    <view class="showDec">
     </view>
   </view>
   <scroll-view class="introduce"  scroll-y="true">
@@ -12,46 +14,5 @@
     </view>
   </scroll-view>
   <scroll-view class="mainContent" scroll-y="true">
-    <view class="classes threeType">
-      <!-- 关联到的类 -->
-      <view class="showText">
-        Classes:
-      </view>
-      <view class="moreMsg firstIn " wx:for="{{classes}}"  >
-        <image class="showMoreIcon {{item.isRotate}}" src="/images/showMore.png" mode="widthFix" bindtap="showMoreMethod" data-name="{{item.name}}" ></image>
-        <view>{{item.name}}</view>
-        <scroll-view scroll-x="true" scroll-y="true" style="height: 50px;width: 100%;" id="dec"> 描述:{{item.desc}}</scroll-view>
-        <view class="moreMsg secondIn {{second.isShowclass}}" wx:for="{{item.methods}}" wx:for-item="second" >
-          {{second.methodName}}
-          <image class="showMoreIcon {{second.isRotate}}" src="/images/showMore.png" mode="widthFix" bindtap="showMethodDec" data-name="{{item.name}}" data-method="{{second.methodName}}"></image>
-          <view class="moreMsg thirdIn {{second.isShowmethod}}">{{second.description}}</view>
-        </view>
-      </view>
-
-    </view>
-    <view class="functions threeType">
-      <!-- 关联到的方法 -->
-      <view class="showText">
-        Functions:
-        <view class="moreMsg firstIn " wx:for="{{functions}}"  >
-        <image class="showMoreIcon " src="/images/showMore.png" mode="widthFix" bindtap="showMoreFunc" data-name="{{item.methodName}}" ></image>
-        {{item.methodName}}
-        <view class="moreMsg secondIn {{item.isShowclass}}">
-          <scroll-view scroll-y="true" style="width: 100%;">
-            {{item.description}}
-          </scroll-view>
-        </view>
-        </view>
-      </view>
-    </view>
-    <view class="datas threeType">
-      <!-- 关联到的数据 -->
-      <view class="showText">
-        Datas:
-        <view class="moreMsg firstIn " wx:for="{{datas}}"  >
-        {{item}}
-        </view>
-      </view>
-    </view>
   </scroll-view>
 </view>

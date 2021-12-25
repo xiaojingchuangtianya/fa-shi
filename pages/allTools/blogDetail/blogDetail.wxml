@@ -6,9 +6,7 @@
   <view wx:if="{{blog.code > 0}}" class="mainContent">
     <view class="title">{{blog.title}}</view>
     <scroll-view scroll-y="true" scroll-x="true" class="mainText">
-      <rich-text nodes="{{blog.content}}">
-      </rich-text>
-
+      <towxml nodes="{{blog.content}}"/>
     </scroll-view>
 
   </view>

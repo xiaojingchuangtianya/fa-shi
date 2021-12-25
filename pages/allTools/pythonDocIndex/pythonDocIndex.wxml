@@ -19,7 +19,7 @@
   </view>
   <view class="mainContent ">
     <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="showTouch">
-      <view class="box" wx:for="{{packages}}"  bindtap="docDetail" data-type="module" data-id="{{item.id}}" data-name="{{item.name}}">
+      <view class="box" wx:for="{{packages}}" >
         <image src="{{item.img}}">
         </image>
         {{item.name}}
@@ -27,14 +27,14 @@
 
     </scroll-view>
     <scroll-view  class=" showContent two {{pageTwoindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
-      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}" data-name="{{item.name}}">
+      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}">
         <image src="{{item.img}}">
         </image>
         {{item.name}}
       </view>
     </scroll-view>
     <scroll-view  class=" showContent three {{pageThreeindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="addMore" data-type="builtIn">
-      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}" data-name="{{item.name}}">
+      <view class="box" wx:for="{{module}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}">
         <image src="{{item.img}}">
         </image>
         {{item.name}}
