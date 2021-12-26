@@ -196,8 +196,8 @@
 }
 
 .h2w__pre .h2w__code {
-    white-space:nowrap;
-    /* width: 9999px; */
+    white-space:pre-wrap;
+    width: 600px;
     display: block;
     font-size: 80%;
 }

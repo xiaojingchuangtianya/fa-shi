@@ -1,1 +1,46 @@
 @import '/towxml/towxml.wxss';
+page,.container{
+    width: 100%;
+    height: 100%;
+}
+.codePage{
+    position: absolute;
+    z-index: 1;
+    background: tomato;
+    width: 100%;
+    height: 100%;
+}
+.beforeCodePage{
+    position: absolute;
+    z-index: 2;
+    background-color: teal;
+    width: 100%;
+    height: 100%;
+}
+.beforeCodePage .codeTip{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.beforeCodePage #editor{
+    height: 60%;
+    width: 100%;
+}
+.beforeCodePage .dontShow{
+    display: none;
+}
+.beforeCodePage .show{
+    display: initial;
+    position: fixed;
+    width: 5rem;
+}
+.weightFont{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(73, 71, 71);
+}
+.addMargin{
+    margin-bottom: 50px;
+}

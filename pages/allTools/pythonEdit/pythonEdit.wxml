@@ -1,4 +1,29 @@
 <import src="/towxml/towxml.wxml"/>
 <view class="container">
-  <towxml nodes="{{article}}"/>
+  <view class="codePage">
+  <!-- 美化后的代码,此页面可以点击执行代码 -->
+    <towxml nodes="{{article}}"/>
+  </view>
+  <view class="beforeCodePage">
+    <!-- 写代码的页面 -->
+  <image src="/images/tips.png" class="codeTip" bindtap="showTip"></image>
+    <textarea 
+      value="{{content}}"
+      show-confirm-bar="{{false}}"
+      name="codeEdit"
+      focus="{{isFoucs}}"
+      id="editor"
+      placeholder="{{placeHolder}}"
+      placeholder-class="weightFont"
+      maxlength="2000" 
+      bindfocus="focusEdit"
+      bindblur="blurEdit"
+      adjust-position="{{false}}"
+      bindkeyboardheightchange="keyboardChange" >
+    </textarea>
+    <button class="addMargin {{focusIsEdit}}" bindtap="makeTap" style="bottom:{{toBottom}};">tap</button>
+  </view>
+  <view class="tipShow">
+  <!-- 展示代码页面用法 -->
+  </view>
 </view>

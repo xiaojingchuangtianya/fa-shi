@@ -1,6 +1,6 @@
 <view class="container" bindtouchstart="touchstart" bindtouchend="touchend">
   <view class="head"> 
-  <image src="/images/backgroud.jpg" mode="aspectFill">
+  <image src="/images/background.jpg" mode="aspectFill">
   </image>
     <view class="search">
       <view class="glass">
@@ -19,7 +19,7 @@
   </view>
   <view class="mainContent ">
     <scroll-view  class=" showContent one {{pageOneindex}}" scroll-y="true" enable-flex="true" bindscrolltolower="showTouch">
-      <view class="box" wx:for="{{packages}}" >
+      <view class="box" wx:for="{{packages}}" bindtap="docDetail" data-type="package" data-id="{{item.id}}" >
         <image src="{{item.img}}">
         </image>
         {{item.name}}

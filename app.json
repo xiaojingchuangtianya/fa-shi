@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/toolHome/tool",
     "pages/allTools/pythonDocIndex/pythonDocIndex",
     "pages/wallpaper/wallpaper",
@@ -11,6 +12,7 @@
     "pages/allTools/pdfChange/pdfChange",
     "pages/allTools/docDetail/docDetail",
     "pages/allTools/pythonEdit/pythonEdit"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

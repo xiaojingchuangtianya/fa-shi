@@ -1,7 +1,7 @@
 <!--pages/toolPage/tool.wxml-->
 <view class="container">
   <view class="padShow">
-    <image src="../../images/padShow.png">
+    <image src="/images/background.jpg">
     </image>
   </view>
   <view class="onUse">
