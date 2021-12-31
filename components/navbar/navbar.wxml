@@ -1,0 +1,18 @@
+<!--components/navbar/navbar.wxml-->
+<view class="bottom" style="animation: {{navShow==0?'hideShow 1s;':''}};"> 
+  <view class="threeItem {{isGray== 0?'gray':''}}"   bindtap="{{isGray== 0?'':'toWallpaper'}}">
+    <image  src="../../images/wallpaper.png"></image>
+  </view>
+  <view class="threeItem {{isGray== 1?'gray':''}}" bindtap="{{isGray==1?'':'toTools'}}">
+    <image src="../../images/tools.png"></image>
+  </view>
+  <view class="threeItem {{ isGray== 2?'gray':''}}" bindtap="{{isGray==2?'':'toMes'}}">
+    <image src="../../images/person.png"></image>
+  </view>
+  <view class=" bottomNav hideNav" bindtap="showBottomNav" style="display: {{navShow==0?'none':''}};">
+      <image src="/images/arrow.png"  mode="heightFix"></image>
+  </view>
+  <view class="bottomNav showNav" bindtap="showBottomNav" style="display: {{navShow==1?'none':''}};">
+    <image src="/images/arrow.png" mode="heightFix"></image>
+  </view>
+</view>

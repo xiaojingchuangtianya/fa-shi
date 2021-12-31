@@ -1,0 +1,73 @@
+
+.bottom{
+  position: fixed;
+  bottom: 10px;
+  width: 86%;
+  height: 6%;
+  left: 7%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: stretch;
+  animation: hideShow 1s; 
+}
+.threeItem{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  margin:  0 auto;
+}
+.threeItem image{
+  height: 80%;
+  width: 40%;
+}
+.gray{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.bottomNav image{
+  height: 100%;
+}
+.hideNav image{
+  transform: rotate(180deg) translateX(-10px);
+}
+.showNav image{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: "";
+}
+@keyframes hideShow{
+  0%   {
+  }
+  25%  {
+    transform: translateX(-20%);
+    position: fixed;
+    width: 86%;
+    height: 6%;
+    background-color: rgb(71, 70, 70);
+  }
+  50%  {
+    transform: translateX(-50%);
+    position: fixed;
+    width: 86%;
+    height: 6%;
+    background-color: rgb(1, 0, 70);
+  }
+  100% {
+    transform: translateX(-100%);
+    position: fixed;
+    width: 86%;
+    height: 6%;
+    background-color: rgb(0, 70, 70);
+  }
+}

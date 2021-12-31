@@ -104,15 +104,5 @@ Page({
         }
       })
     },
-    //前往个人信息界面
-    toMes(){
-      wx.redirectTo({
-        url: '../myMes/myMes',
-      })
-    },
-    toTools(){
-      wx.redirectTo({
-        url: '../toolHome/tool',
-      })
-    }
+  
 })

@@ -54,4 +54,5 @@
       </view>
     </view>
   </scroll-view>
+  <navbar isGray="3"></navbar>
 </view>

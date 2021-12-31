@@ -1,11 +1,9 @@
 {
   "pages": [
-    
     "pages/toolHome/tool",
     "pages/allTools/pythonDocIndex/pythonDocIndex",
     "pages/wallpaper/wallpaper",
     "pages/myMes/myMes",
-    "pages/home/home",
     "pages/wallpaperDetail/detail",
     "pages/allTools/blogIndex/blogIndex",
     "pages/allTools/blogDetail/blogDetail",

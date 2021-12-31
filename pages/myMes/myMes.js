@@ -108,15 +108,5 @@ Page({
       }
     })
   },
-  //去壁纸界面
-  ToWallpaper(){
-    wx.navigateTo({
-      url: '../wallpaper/wallpaper',
-    })
-  },
-  toTools(){
-    wx.redirectTo({
-      url: '../toolHome/tool',
-    })
-  }
+
 })

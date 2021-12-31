@@ -1,4 +1,4 @@
 {
-    "usingComponents": {},
+    "usingComponents": {"navbar":"/components/navbar/navbar"},
     "navigationBarTitleText": "随机壁纸"
   }

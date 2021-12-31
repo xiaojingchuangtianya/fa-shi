@@ -17,14 +17,14 @@ module.exports = {
         'sup',                      // 上标支持
         'ins',                      // 文本删除线支持
         'mark',                     // 文本高亮支持
-        'emoji',                    // emoji表情支持
+        // 'emoji',                    // emoji表情支持
         'todo'                      // todo支持
     ],
 
     // 代码高亮配置，保留需要的选项即可（尽量越少越好，不要随意调整顺序。部分高亮有顺序依赖）
     highlight:[
         // 'c-like',
-        'c',
+        // 'c',
         // 'bash',
         // 'css',
         // 'dart',
@@ -40,7 +40,7 @@ module.exports = {
         // 'nginx',
         // 'php',
         'python',
-        'python-repl',
+        // 'python-repl',
         // 'typescript',
         
         // 'csharp',
@@ -279,8 +279,8 @@ module.exports = {
         // 'touchmove',
         // 'touchcancel',
         // 'touchend',
-        'tap',                      // 用于元素的点击事件
-        'change',                   // 用于todoList的change事件
+        // 'tap',                      // 用于元素的点击事件
+        // 'change',                   // 用于todoList的change事件
     ],
 
     // 图片倍数

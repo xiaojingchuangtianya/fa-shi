@@ -118,17 +118,7 @@ Page({
     }
     })
   },
-  //页面跳转
-  toWallpaper(){
-    wx.redirectTo({
-      url: '../../wallpaper/wallpaper',
-    })
-  },
-  toMes(){
-    wx.redirectTo({
-      url: '../../myMes/myMes',
-    })
-  },
+
   downLoadFile(){
     wx.showLoading({
       title: '开始下载文件！',

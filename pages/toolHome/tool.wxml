@@ -18,15 +18,5 @@
   <view class="onDev">
     
   </view>
-  <view class="bottom"> 
-    <view class="threeItem "  bindtap="toWallpaper">
-      <image src="../../images/wallpaper.png"></image>
-    </view>
-    <view class="threeItem gray">
-      <image src="../../images/tools.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toMes">
-      <image src="../../images/person.png"></image>
-    </view>
-  </view>
+  <navbar isGray="1"></navbar>
 </view>

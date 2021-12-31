@@ -41,16 +41,6 @@
       </button>
     </view>
   </view>
-  <view class="bottom"> 
-    <view class="threeItem " bindtap="ToWallpaper">
-      <image  src="../../images/wallpaper.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toTools">
-      <image src="../../images/tools.png"></image>
-    </view>
-    <view class="threeItem gray">
-      <image src="../../images/person.png"></image>
-    </view>
-  </view>
+  <navbar isGray="2"></navbar>
 </view>
 

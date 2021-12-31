@@ -10,15 +10,5 @@
       <button bindtap="saveImg" id="saveImg">保存至本地</button>
     </view>
   </view>
-  <view class="bottom"> 
-    <view class="threeItem gray" >
-      <image class="gray" src="../../images/wallpaper.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toTools">
-      <image src="../../images/tools.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toMes">
-      <image src="../../images/person.png"></image>
-    </view>
-  </view>
+  <navbar isGray="3"></navbar>
 </view>

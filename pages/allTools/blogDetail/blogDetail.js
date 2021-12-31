@@ -39,24 +39,5 @@ Page({
       
     })
   },
-  toWallpaper(){
-    wx.redirectTo({
-      url: '/pages/wallpaper/wallpaper',
-    })
-  },
-  toMes(){
-    wx.redirectTo({
-      url: '/pages/myMes/myMes',
-    })
-  },  
-  goToBlog(){
-    wx.redirectTo({
-      url: '/pages/allTools/blogIndex/blogIndex',
-    })
-  },
-  toTools(){
-    wx.redirectTo({
-      url: '/pages/toolHome/tool',
-    })
-  }
+
 })

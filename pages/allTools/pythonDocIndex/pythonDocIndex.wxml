@@ -41,15 +41,5 @@
       </view>
     </scroll-view>
   </view>
-  <view class="bottom"> 
-    <view class="threeItem "  bindtap="toWallpaper">
-      <image src="/images/wallpaper.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toTools">
-      <image src="/images/tools.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toMes">
-      <image src="/images/person.png"></image>
-    </view>
-  </view>
+  <navbar isGray="3"></navbar>
 </view>

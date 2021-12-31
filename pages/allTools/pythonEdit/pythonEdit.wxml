@@ -26,4 +26,5 @@
   <view class="tipShow">
   <!-- 展示代码页面用法 -->
   </view>
+  <navbar isGray="3"></navbar>
 </view>

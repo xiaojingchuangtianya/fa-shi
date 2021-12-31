@@ -17,10 +17,11 @@ Page({
   goPage(e){
     console.log(e.currentTarget.dataset.page)
     if (app.globalData.userInfo ==null){
-      this.getUserProfile(e.currentTarget.dataset.page)
-      // wx.redirectTo({
-      //   url:"../allTools/"+e.currentTarget.dataset.page+"/"+e.currentTarget.dataset.page,
-      // })
+      // this.getUserProfile(e.currentTarget.dataset.page)
+      // 测试时打开
+      wx.redirectTo({
+        url:"../allTools/"+e.currentTarget.dataset.page+"/"+e.currentTarget.dataset.page,
+      })
     }
     else{
       if (e.currentTarget.dataset.page =="/"){
@@ -36,16 +37,7 @@ Page({
     }
 
   },
-  toWallpaper(){
-    wx.redirectTo({
-      url: '../wallpaper/wallpaper',
-    })
-  },
-  toMes(){
-    wx.redirectTo({
-      url: '../myMes/myMes',
-    })
-  },  
+ 
   getUserProfile(e) {
     wx.getUserProfile({
     desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写

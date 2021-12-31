@@ -164,20 +164,5 @@ Page({
       url: detailUrl
     })
   },
-  //页面跳转
-  toWallpaper(){
-    wx.redirectTo({
-      url: '/pages/wallpaper/wallpaper',
-    })
-  },
-  toMes(){
-    wx.redirectTo({
-      url: '/pages/myMes/myMes',
-    })
-  },
-  toTools(){
-    wx.redirectTo({
-      url: '/pages/toolHome/tool',
-    })
-  }
+
 })

@@ -19,18 +19,5 @@
       <text>4.因小程序限制,无法直接将文件保存至用户手机文件夹,需要用户自主将文件转发到文件助手进行保存!</text>
     </view>
   </view>
-
-
-
-  <view class="bottom"> 
-    <view class="threeItem "  bindtap="toWallpaper">
-      <image src="../../../images/wallpaper.png"></image>
-    </view>
-    <view class="threeItem gray">
-      <image src="../../../images/tools.png"></image>
-    </view>
-    <view class="threeItem" bindtap="toMes">
-      <image src="../../../images/person.png"></image>
-    </view>
-  </view>
+  <navbar isGray="3"></navbar>
 </view>

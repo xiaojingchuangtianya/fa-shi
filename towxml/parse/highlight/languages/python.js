@@ -20,8 +20,7 @@ export default function(hljs) {
   };
   var SUBST = {
     className: 'subst',
-    begin: /\{/, 
-      end: /\}/,
+    begin: /\{/, end: /\}/,
     keywords: KEYWORDS,
     illegal: /#/
   };

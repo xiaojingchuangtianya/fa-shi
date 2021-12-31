@@ -25,36 +25,3 @@ page,.container,.mainContent{
 .clickDown .heart{
   height: 100%;
 }
-.bottom{
-  position: fixed;
-  bottom: 10px;
-  width: 86%;
-  height: 6%;
-  left: 7%;
-  background-color: black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: stretch;
-}
-.threeItem{
-  height: 100%;
-  width: 30%;
-  display: flex;
-  align-content: space-between;
-  justify-content: center;
-  margin:  0 auto;
-}
-.threeItem image{
-  height: 80%;
-  width: 40%;
-}
-.gray{
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-}
