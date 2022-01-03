@@ -10,7 +10,7 @@ Component({
     },
     navShow:{
       type:Number,
-      value:1
+      value:2
     }
   },
 
@@ -40,16 +40,19 @@ Component({
     },
     //收缩、弹出事件
     showBottomNav(){
-      if(this.data.navShow==1){
+      if(this.data.navShow>=1){
+        this.triggerEvent("navShowFun",{"navShow":0})
         this.setData({
           navShow:0
         })
       }
       else{
+        this.triggerEvent("navShowFun",{"navShow":1})
         this.setData({
           navShow:1
         })
       } 
-    }
+    },
   }
+
 })

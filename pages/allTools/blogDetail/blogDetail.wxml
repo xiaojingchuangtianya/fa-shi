@@ -7,15 +7,7 @@
     <view class="title">{{blog.title}}</view>
     <scroll-view scroll-y="true" scroll-x="true" class="mainText">
       <towxml nodes="{{blog.content}}"/>
-    </scroll-view>
-
-  </view>
-<!-- 无内容可现显示 -->
-  <view wx:else class="mainContent">
-    <view class="title">{{blog.title}}</view> 
-     <button bindtap="goToBlog" >回到博客主页</button>
-  </view>
-  <view class="mes">   
+      <view class="mes">   
       <view class="right-Pannel"> 
         <text >作者:{{blog.author}}</text>
       </view>
@@ -25,7 +17,30 @@
       <view class="right-Pannel">
         <text >{{blog.createTime}}</text>
       </view>
+  </view>
+    </scroll-view>
+  </view>
+<!-- 无内容可现显示 -->
+  <view wx:else class="mainContent">
+    <view class="title">{{blog.title}}</view> 
+     <button bindtap="goToBlog" >回到博客主页</button>
+  </view>
+  <navbar isGray="3" bind:navShowFun="sendData" style="z-index: 10;"></navbar>
+  <view class="writeComs" style="display: {{navShow==1?'none':''}};">
+    <view class="sendCom" bindtap="sendCom">
+      发送
     </view>
-  <navbar isGray="3"></navbar>
+    <textarea 
+      name="writeComs" 
+      id="writeComs" 
+      placeholder="在此处输入评论!" 
+      show-confirm-bar="{{false}}" 
+      adjust-position="true" 
+      value="{{writeCom}}"
+      bindblur="textBlur"
+      >
+      </textarea>
+  </view>
+  <comments comments="{{allComments}}"></comments>
 </view>
 

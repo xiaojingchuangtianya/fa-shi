@@ -1,0 +1,12 @@
+var timeFormat = function (timeStr) {
+    var year=getDate().getFullYear()
+    if(timeStr.slice(0,4)==year){
+        return timeStr.slice(5,13).replace("T"," ")+"时"
+    }
+    else{
+        return timeStr.slice(0,10)
+    }
+}
+module.exports={
+    timeFormat:timeFormat
+}

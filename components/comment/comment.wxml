@@ -1,0 +1,21 @@
+<wxs module="timeFormat" src="/utils/timeFormat.wxs"></wxs>
+<view wx:if="{{isShow!=2}}" style="animation:{{isShow==0?'hideComs 0.6s  linear forwards;':'showComs 0.6s  linear forwards;'}}; ;">
+    <view class="comHead" style="display: {{isShow==1?'':'none'}};">评论区</view>
+    <view  class="hideShow" style="display: {{isShow==1?'':'none'}};" bindtap="showComment">收起</view>
+    <view  class="showHide" style="display: {{isShow!=1?'':'none'}};" bindtap="showComment">展开</view>
+    <scroll-view class="allComs" scroll-y="true" style="display: {{isShow==1?'':'none'}};">
+    <view wx:if="{{comments.length==0}}">
+        暂无评论,收起下方导航条可进行评论
+    </view>
+    <view  wx:for="{{comments}}">
+        <view class="comment">
+        <text style="white-space: pre-wrap;color: #07163f;">{{item.name}}:</text>
+        <text>{{item.content}}</text>
+        </view>
+        <view class="comTime">{{timeFormat.timeFormat(item.writeTime)}}</view>
+    </view>
+    </scroll-view>
+</view>
+<view wx:else>
+    <view  class="showHide" bindtap="showComment">展开</view>
+</view>

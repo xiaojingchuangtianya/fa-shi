@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "towxml":"/towxml/towxml",
-    "navbar":"/components/navbar/navbar"
+    "navbar":"/components/navbar/navbar",
+    "comments":"/components/comment/comment"
   },
   "navigationBarTitleText": "博客详情"
 }
