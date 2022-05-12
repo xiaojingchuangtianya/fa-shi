@@ -6,9 +6,9 @@ Page({
       {"toolImg":"../../images/pdf.png","toolName":"转PDF","goPage":"pdfChange"},
       {"toolImg":"../../images/writeBlog.png","toolName":"博客交流","goPage":"blogIndex"},
       {"toolImg":"../../images/Python.png","toolName":"python文档","goPage":"pythonDocIndex"},
-      {"toolImg":"../../images/pythonEdit.png","toolName":"在线编程","goPage":"/"},
-      {"toolImg":"../../images/json.png","toolName":"JSON解析器","goPage":"/"},
-      {"toolImg":"../../images/MD5.png","toolName":"MD5加密","goPage":"/"},
+      {"toolImg":"../../images/pythonEdit.png","toolName":"在线编程","goPage":"pythonEdit"},
+      {"toolImg":"../../images/IPaddress.png","toolName":"IP地址解释","goPage":"IPadress"},
+      {"toolImg":"../../images/OCR.png","toolName":"OCR识别","goPage":"OCR"},
     ]
   },
 

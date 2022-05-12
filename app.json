@@ -1,23 +1,25 @@
 {
-  "pages": [
-    "pages/toolHome/tool",
-    "pages/allTools/pythonDocIndex/pythonDocIndex",
-    "pages/wallpaper/wallpaper",
-    "pages/myMes/myMes",
-    "pages/wallpaperDetail/detail",
-    "pages/allTools/blogIndex/blogIndex",
-    "pages/allTools/blogDetail/blogDetail",
-    "pages/allTools/pdfChange/pdfChange",
-    "pages/allTools/docDetail/docDetail",
-    "pages/allTools/pythonEdit/pythonEdit"
-
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/toolHome/tool",
+        "pages/allTools/pythonDocIndex/pythonDocIndex",
+        "pages/wallpaper/wallpaper",
+        "pages/myMes/myMes",
+        "pages/wallpaperDetail/detail",
+        "pages/allTools/blogIndex/blogIndex",
+        "pages/allTools/blogDetail/blogDetail",
+        "pages/allTools/pdfChange/pdfChange",
+        "pages/allTools/docDetail/docDetail",
+        "pages/allTools/pythonEdit/pythonEdit",
+        "pages/allTools/IPadress/IPadress",
+        "pages/allTools/guitar/guitar",
+        "pages/allTools/OCR/OCR"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
