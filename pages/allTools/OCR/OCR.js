@@ -5,7 +5,6 @@ Page({
         //看情况，是否需要将数据保留存储，还是说用完就丢，不过感觉服务器内存太小了，还是别存了，记录一下日志就好，方便查问题
         getReturn:"false",//是否获得返回数据了
         takeOrget:"false",//拍照上传或者本地选择上传
-        showUpload:true,
         uploadImg:"",
         recieveImg:""
     },
