@@ -25,3 +25,7 @@ page,.container,.mainContent{
 .clickDown .heart{
   height: 100%;
 }
+.size{
+  text-align: center;
+  font-weight: 500;
+}

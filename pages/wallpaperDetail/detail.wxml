@@ -5,6 +5,9 @@
   <scroll-view class="img" scroll-x="true">
     <image src='{{imgurl}}' mode="heightFix"></image>
   </scroll-view>
+    <view class="size">
+      图片尺寸：{{imgSize}}
+    </view>
     <view class="clickDown">
       <!-- <image class="heart" src="../../images/heart.png" mode="heightFix"></image> -->
       <button bindtap="saveImg" id="saveImg">保存至本地</button>

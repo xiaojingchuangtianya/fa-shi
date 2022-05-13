@@ -32,6 +32,14 @@ text{
 .typeItems{
   height: 90%;
 }
+/* .beforeShow{
+  background-color: #7b551c;
+  opacity: 0;
+  transform: translateY(-150%);
+}
+.hoverShow{
+  opacity: 1;
+} */
 .itemT{
   border-bottom: dashed 0.5px black;
   padding: 2px;

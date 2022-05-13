@@ -1,1 +1,36 @@
-/* pages/allTools/OCR.wxss */
+/* pages/allTools/pdfChange/pdfChange.wxss */
+page,.container{
+    width: 100%;
+    height: 100%;
+  }
+  .strong{
+      font-weight: bolder;
+  }
+  .uploadFile{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .notice{
+      margin-left: 15px;
+  }
+
+/*作一个动画进行反转显示拍照或者上传 */
+
+.toolLine .change{
+    background-image: linear-gradient(#5151da,#837bd1 );
+    border-radius: 10px;
+    border: rgb(136, 152, 223) solid 2px;
+  }
+  /*
+  .uploadFile .download{
+    background-color: rgb(54, 238, 125);
+    border-radius: 10px;
+    border: rgb(118, 241, 215) solid 2px;
+  } */
+  
+  

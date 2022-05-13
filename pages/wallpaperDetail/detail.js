@@ -1,15 +1,17 @@
 const app = getApp()
 Page({
   data:{
-    imgurl:""
+    imgurl:"",
+    imgSize:""
   },
   onLoad(options){
     wx.setNavigationBarTitle({
       title: '高清壁纸下载',
     })
-    // console.log(options["imgUrl"])
+    console.log(options)
     this.setData({
-      imgurl:"https://linjingfly.top/static/img/true/"+options["imgUrl"]
+      imgurl:"https://linjingfly.top/static/img/true/"+options["imgUrl"],
+      imgSize:options["imgSize"]
     })
     wx.authorize({
       scope: 'scope.writePhotosAlbum',
@@ -78,7 +80,6 @@ Page({
     console.log(this.data)
     wx.downloadFile({
       url: this.data.imgurl,
-      
       success:(res)=>{
         let tempFilePath = res.tempFilePath
         // console.log("开始下载"+this.data.imgurl),

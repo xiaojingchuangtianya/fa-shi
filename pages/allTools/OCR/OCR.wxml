@@ -1,2 +1,41 @@
 <!--pages/allTools/OCR.wxml-->
-<text>pages/allTools/OCR.wxml</text>
+<!--pages/allTools/pdfChange/pdfChange.wxml-->
+<scroll-view class="container" scroll-y="true">
+  <view class="uploadFile" wx:if="{{getReturn}}">
+      <view class="takePhoto" wx:if="{{takeOrget}}" bindtap="chooseImg">
+        <image  src="/images/uploadImg.png"></image>
+      </view>
+      <view class="uploadImage" wx:else="{{takeOrget}}" bindtap="takePhoto">
+        <image  src="/images/uploadFile.png"></image>
+      </view>
+      <view class="toolLine">
+        <button class="change" bindtap="exchange">
+        {{takeOrget?'切换为本地上传':'切换为拍照上传'}}
+        </button>
+      </view>
+  </view>
+  <view class="returnImg" wx:else="{{getReturn}}">
+  返回图片信息
+  </view>
+  <view class="notice" wx:if="{{getReturn}}">
+    <view>
+      <text>1.上传文件后会直接将对应的文件进行识别，返回文本。</text>
+    </view>
+    <view>
+      <text>2.请尽可能使用高像素的图片进行识别，但请勿超出10m。</text>
+    </view>
+    <view>
+      <text>3.点击按钮可以切换至<text class="strong">拍照</text>/<text class="strong">上传图片</text>进行识别。</text>
+    </view>
+  </view>
+
+  <view class="notice" wx:else="{{getReturn}}">
+    <view>
+      <text>1.对应识别的文字会展示在图片中的位置，可通过点击<text class="strong">隐藏</text>/<text class="strong">显示</text>按钮查看识别的文字位置。</text>
+    </view>
+    <view>
+      <text>2.需要保存结果请直接点击下载按钮保存图片。</text>
+    </view>
+  </view>
+</scroll-view>
+<navbar isGray="3"></navbar>

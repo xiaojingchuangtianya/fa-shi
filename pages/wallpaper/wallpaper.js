@@ -37,8 +37,9 @@ Page({
     },
     //前往壁纸详情
     detail(e){
+      console.log(e.currentTarget.dataset)
         wx.navigateTo({
-          url: '../wallpaperDetail/detail?imgUrl='+e.currentTarget.dataset.imgsrc,
+          url: '../wallpaperDetail/detail?imgUrl='+e.currentTarget.dataset.imgsrc+'&&imgSize='+e.currentTarget.dataset.imgsize,
         })
     },
     //展示列表
@@ -75,7 +76,7 @@ Page({
         url: 'https://linjingfly.top/wallpaper/WechatType='+that.data.imgtype+"?startPage="+that.data.startPage,
         success(res){
            //  此处是闭包，this作用域无法指向
-           // console.log(res.data)
+           console.log(res.data)
            that.setData({
                imgList:res.data,
                startPage:that.data.startPage+1

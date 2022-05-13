@@ -20,9 +20,12 @@
   </view>
   <view class="mainContent">
   <!-- 这里展示种类 -->
-  <block wx:for="{{imgList}}">
-    <image class="detail" src='https://linjingfly.top/static/img/fake/{{item}}' bindtap="detail" data-imgSrc='{{item}}' mode="widthFix"></image>
-  </block>
+  <view wx:for="{{imgList}}">
+    <image class="detail" src='https://linjingfly.top/static/img/fake/{{item[1]}}' bindtap="detail" data-imgSrc='{{item[1]}}' data-imgSize='{{item[0]}}' mode="widthFix"></image>
+    <!-- <view hover-class="hoverShow" class="beforeShow">
+       <text>展示分辨率</text> 
+    </view> -->
+  </view>
   </view>
   <navbar isGray="0"></navbar>
 </view>
